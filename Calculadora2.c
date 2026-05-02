@@ -29,6 +29,7 @@ int main(){
 			resultado = calculadora(n1, n2, operacion);
 			mostrar(resultado);
 		}
+	 	printf("\n\nDeseas Seguir haciendo Operaciones SI/NO: ");
 		scanf("%s", rta);
 		mayuscula(rta);
 	}while(strcmp(rta, "SI")==0);
