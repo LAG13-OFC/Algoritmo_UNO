@@ -58,6 +58,7 @@ void mostrar(float result){
 	printf("\nEl resultado es: %.2f", result);
 }
 void mayuscula(char cadena[]){
+	int i;
 	for(int i=0; cadena[i] != '\0'; i++){//recorre la cadena de la posicion 0 hasta el ultimo caracter sin ser el \0
 		if(cadena[i]>= 'a' && cadena[i] <= 'z'){//pregunta si si el caracter pertenece a la minusculas
 			cadena[i] = cadena[i]-32;// si pertence le reta 32 posiciones en el codigo ASCCI, si restas 32 el caracter seria la misma pero en mayuscula
