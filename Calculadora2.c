@@ -46,6 +46,11 @@ float calculadora(float num1, float num2, char op){
 			return num1/num2;
 		case 'm':
 			return num1*num2;
+		default:
+			printf("\n\nOPCION NO VALIDA\n\n");
+			system("pause");
+			return main();
+		
 	}
 }
 
