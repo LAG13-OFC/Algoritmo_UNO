@@ -7,7 +7,6 @@ float calculadora(float , float , char );//Prototipo
 void mostrar(float );
 void mayuscula(char cadena[]);
 int main(){
-	float n1, n2, resultado;
 	char operacion, rta[3];
 	do{
 		system("cls");
@@ -29,8 +28,6 @@ int main(){
 			resultado = calculadora(n1, n2, operacion);
 			mostrar(resultado);
 		}
-		
-		printf("\n\nDeseas seguir relalizando operaciones SI/NO: ");
 		scanf("%s", rta);
 		mayuscula(rta);
 	}while(strcmp(rta, "SI")==0);
