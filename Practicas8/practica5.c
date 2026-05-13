@@ -3,7 +3,7 @@
 
 int main(){
 	int nDepa, destDepa, contD=0;
-	char catDepa, cocheDepa, rta, multa;
+	char catDepa, cocheDepa, rta[3], multa;
 	float multDepa=0;
 	float expensa(char, int, char);
 	void mostrarD(int);
@@ -11,7 +11,7 @@ int main(){
 	   system("cls");
 	   printf("Ingrese Numero de Departamento: ");
        scanf("%i", &nDepa);
-       printf("\nCategoria Del departamento:\n[p]> Piso\n[s]> Semi Piso\n[d]> Dos Smbientes\n[m]> Monoambiente");   
+       printf("\nCategoria Del departamento:\n[p]> Piso\n[s]> Semi Piso\n[d]> Dos Ambientes\n[m]> Monoambiente");   
        printf("\nIngrese una Opcion: ");
        scanf(" %c", &catDepa);
        if(expensa(catDepa, destDepa, cocheDepa)!=-1){
@@ -40,10 +40,14 @@ int main(){
 	      	printf("\n\nError: Categoria '%c' no existe", catDepa); 
 	   }
       
-       printf("\n\nDeseas seguir ingresando Departamentos? s/n: ");
-       scanf(" %c", &rta);
+       printf("\n\nDeseas seguir ingresando Departamentos? si/no: ");
+       scanf("%s", rta);//s= string
        
-	}while(rta=='s');
+	}while(strcmp("si", rta)==0);
+	//!strcmp() si devuelve 0 le pone en 1 para el while ser verdadero
+	//strcmp devuelve 0 si es verdadero
+	//while es al alcontrario; 1 es verdadero
+	//true = 1 y false = 0
 	
 	mostrarD(contD);
 	return 0;

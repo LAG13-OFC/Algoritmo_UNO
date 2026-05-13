@@ -70,7 +70,8 @@ int main(){
 				if(d_alca< min_dt){
 					min_dt= d_alca;
 					strcpy(min_nObj, n_obj);
-					min_pot= p_obj;
+  			  		nomMax= nom;  								   			  
+									 		  			
 				}
 			}
 		}//==T
