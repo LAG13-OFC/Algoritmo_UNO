@@ -16,8 +16,9 @@ int main(){
 		printf("\nIngresar dias de trabajo: ");
 		scanf("%i", &diaTrabajo);
 		printf("\nEs Profesional? SI/NO: ");
-	 	scanf("%s", profe);
-					 
+			fflush(stdin);	
+			gets(profe, 3, stdin); 	 
+					               
 		printf("\nIngrese Cantidad o Calidad de trabajo (1 a 5): ");
   		scanf("%i", &caliCanti);
 		printf("\nIngrese cooperacion (1-5): ");

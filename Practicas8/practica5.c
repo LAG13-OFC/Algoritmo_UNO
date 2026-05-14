@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+float expensa(char, int, char);
+void mostrarD(int);
 int main(){
 	int nDepa, destDepa, contD=0;
 	char catDepa, cocheDepa, rta[3], multa;
 	float multDepa=0;
-	float expensa(char, int, char);
-	void mostrarD(int);
+
 	do{
 	   system("cls");
 	   printf("Ingrese Numero de Departamento: ");

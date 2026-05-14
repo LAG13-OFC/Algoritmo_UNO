@@ -4,8 +4,6 @@
 #include <string.h>
 float montoViatico(float, float, float);
 void mostrar(int);
-#define pi 3,14
-
 int main(){
 	
 	
@@ -16,7 +14,7 @@ int main(){
 	do{
 		antici=0;
 		system("cls");
-					  printf("Imgrese Codigo de Legajo: ");
+  		printf("Imgrese Codigo de Legajo: ");
 					  
 		scanf("%i", &coLeg);
 		printf("\nCategoria de Empleado:\n[v]> Vendedor\n[j]> Jefe Comercial\n[g]> Gerente de Producto");
